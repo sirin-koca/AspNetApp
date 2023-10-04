@@ -1,0 +1,30 @@
+﻿@model IEnumerable<QuickMvcApp.Models.Person>
+
+<h2>People List</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.Id</td>
+            <td>@person.Name</td>
+            <td>@person.Age</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@person.Id" class="btn btn-warning">Edit</a>
+                <a asp-action="Delete" asp-route-id="@person.Id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Add Person</a>
