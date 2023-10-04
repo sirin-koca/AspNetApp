@@ -11,6 +11,6 @@ A minimalistic ASP.NET Core MVC application.
 ![image](https://github.com/sirin-koca/QuickMvcApp/assets/89571121/e5ace0aa-62ab-45c1-8144-a201d87780be)
 
 ### Deployment
-Successful GitHub Action setup, build and deployment pipeline with Microsoft Azure Workflow.
+Successful GitHub Action setup, build and deployment pipeline with Microsoft Azure App Service.
 
 [_sirin-koca_](https://github.com/sirin-koca)
